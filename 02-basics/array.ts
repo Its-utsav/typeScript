@@ -15,7 +15,7 @@ type User = {
   phoneNumber: number;
 };
 
-const allUser: User[] = [];
+const allUser: User[] = []; // only add those data who follow User type structor
 
 allUser.push({
   name: "Utsav",
