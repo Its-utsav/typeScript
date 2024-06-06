@@ -63,5 +63,5 @@ type User = [number, string];
 const user1: User = [1, "utsav"];
 
 // user1[0] = "LOL"; // not allow
-user1.push("lol"); // limitination
+user1.push("lol"); // tuple limitination - not grate
 export {};
