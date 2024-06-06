@@ -44,6 +44,8 @@ type Person = {
   name: string;
   age: number;
   isMale: boolean;
+  readonly id: number; // won't chnage
+  isAlien?: boolean; // optional type
 };
 
 type Student = Person & {
@@ -55,7 +57,11 @@ let Student1: Student = {
   age: 18,
   isMale: true,
   course: "Bca",
+  id: 123,
+  isAlien: false,
 };
+Student1.age = 19;
+// Student1.id = 34; // stop from modifying id
 
 type Id = number | string;
 
